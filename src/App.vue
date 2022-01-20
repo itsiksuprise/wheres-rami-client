@@ -80,17 +80,17 @@ export default {
 
 @font-face {
   font-family: "AlmoniBold";
-  src: url("./../public/fonts/Almoni/ALMONI-NEUE-TZAR-AAA-800.TTF");
+  src: url("./../fonts/Almoni/ALMONI-NEUE-TZAR-AAA-800.TTF");
 }
 
 @font-face {
   font-family: "AlmoniRegular";
-  src: url("./../public/fonts/Almoni/ALMONI-NEUE-TZAR-AAA-400.TTF");
+  src: url("./../fonts/Almoni/ALMONI-NEUE-TZAR-AAA-400.TTF");
 }
 
 @font-face {
   font-family: "AlmoniLight";
-  src: url("./../public/fonts/Almoni/ALMONI-NEUE-TZAR-AAA-200.TTF");
+  src: url("./../fonts/Almoni/ALMONI-NEUE-TZAR-AAA-200.TTF");
 }
 
 body,
