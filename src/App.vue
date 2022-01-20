@@ -178,7 +178,7 @@ p {
 
 #toggle {
   position: absolute;
-  bottom: 10vh;
+  bottom: 20vh;
   transform: scale(1.5);
 }
 </style>
