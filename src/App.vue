@@ -75,19 +75,36 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.google.com/specimen/Heebo?subset=hebrew");
+/* @import url("https://cdn.jsdelivr.net/npm/@openfonts/heebo_hebrew/+esm"); */
+/* @import url("https://fonts.googleapis.com/css?family=Heebo"); */
+
+@font-face {
+  font-family: "AlmoniBold";
+  src: url("./../fonts/Almoni/ALMONI-NEUE-TZAR-AAA-800.TTF");
+}
+
+@font-face {
+  font-family: "AlmoniRegular";
+  src: url("./../fonts/Almoni/ALMONI-NEUE-TZAR-AAA-400.TTF");
+}
+
+@font-face {
+  font-family: "AlmoniLight";
+  src: url("./../fonts/Almoni/ALMONI-NEUE-TZAR-AAA-200.TTF");
+}
 
 body,
 html {
   padding: 0;
   margin: 0;
   width: 100%;
-  font-family: "Heebo";
-  min-height: 100vh;
+  overflow: hidden;
+  /* font-family: "Heebo"; */
+  height: 100vh;
 }
 
 .v-application {
-  font-family: "Heebo" !important;
+  /* font-family: "Pa" !important; */
 }
 
 .v-application--wrap {
@@ -106,9 +123,10 @@ p {
 }
 
 #status {
+  font-family: "AlmoniBold";
   font-size: 20vh;
   line-height: 0.9;
-  font-weight: bold;
+  font-weight: 700;
   color: #eca4b8;
   text-shadow: 0 1px 0 #d84c76, 0 2px 0 #d84c76, 0 3px 0 #d84c76,
     0 4px 0 #d84c76, 0 5px 0 #d84c76, 0 6px 0 #d84c76, 0 7px 0 #d84c76,
@@ -118,11 +136,15 @@ p {
 
 #name {
   font-size: 5vh;
+  line-height: 0.2;
+
+  font-family: "AlmoniRegular";
 }
 
 #office {
   font-size: 5vh;
-  margin-top: 3vh !important;
+  font-family: "AlmoniRegular";
+  /* margin-top: 2vh !important; */
 }
 
 #holder {
@@ -133,6 +155,8 @@ p {
 
 .vs-switch__text {
   font-size: 2vh;
+  font-family: "AlmoniLight";
+  letter-spacing: 0.3ch;
 }
 
 .vs-switch__circle {
