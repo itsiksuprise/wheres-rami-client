@@ -97,10 +97,14 @@ body,
 html {
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   /* font-family: "Heebo"; */
   height: 100vh;
+}
+
+html {
+  padding: 0px !important;
 }
 
 .v-application {
@@ -124,7 +128,7 @@ p {
 
 #status {
   font-family: "AlmoniBold";
-  font-size: 20vh;
+  font-size: 28vh;
   line-height: 0.9;
   font-weight: 700;
   color: #eca4b8;
@@ -135,14 +139,14 @@ p {
 }
 
 #name {
-  font-size: 5vh;
+  font-size: 7vh;
   line-height: 0.2;
 
   font-family: "AlmoniRegular";
 }
 
 #office {
-  font-size: 5vh;
+  font-size: 7vh;
   font-family: "AlmoniRegular";
   /* margin-top: 2vh !important; */
 }
