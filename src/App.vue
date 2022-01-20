@@ -155,6 +155,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: -15vh;
 }
 
 .vs-switch__text {
