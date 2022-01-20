@@ -41,7 +41,9 @@ export default {
   },
   methods: {
     async initStatus() {
-      const data = await fetch("http://localhost:3000/status");
+      const data = await fetch(
+        "https://wheres-rami-server.herokuapp.com/status"
+      );
       const a = await data.json();
       console.log("status is " + JSON.stringify(a));
       this.status = a.status;
@@ -52,7 +54,9 @@ export default {
       if (this.status === "לא") {
         newS = "כן";
       }
-      await fetch(`http://localhost:3000/status/${newS}`, { method: "POST" });
+      await fetch(`https://wheres-rami-server.herokuapp.com/status/${newS}`, {
+        method: "POST",
+      });
       await this.initStatus();
     },
     initInOffice() {
